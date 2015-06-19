@@ -1,0 +1,725 @@
+﻿<DocInternals>
+  <AlwaysLoose>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+  </AlwaysLoose>
+  <FieldSrcTables>
+    <String>6</String>
+    <String>1</String>
+    <String>_Degisim</String>
+    <String>7</String>
+    <String>1</String>
+    <String>_Degisim</String>
+    <String>8</String>
+    <String>1</String>
+    <String>_Tutar</String>
+    <String>9</String>
+    <String>1</String>
+    <String>_GruplamaTipi</String>
+    <String>10</String>
+    <String>4</String>
+    <String>Şube Hiyerarşi</String>
+    <String>Büyüklük Gelişim</String>
+    <String>Sayısal Performans</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>11</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>12</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>13</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>14</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>15</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>16</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>17</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>18</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>19</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>20</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>21</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>22</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>23</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>24</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>25</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>26</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>27</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>28</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>29</String>
+    <String>1</String>
+    <String>Şube Hiyerarşi</String>
+    <String>30</String>
+    <String>1</String>
+    <String>Performans Kriter</String>
+    <String>31</String>
+    <String>2</String>
+    <String>Performans Kriter</String>
+    <String>Büyüklük Gelişim</String>
+    <String>32</String>
+    <String>1</String>
+    <String>Performans Kriter</String>
+    <String>33</String>
+    <String>2</String>
+    <String>Performans Kriter Detay</String>
+    <String>Büyüklük Gelişim</String>
+    <String>34</String>
+    <String>1</String>
+    <String>Performans Kriter Detay</String>
+    <String>35</String>
+    <String>1</String>
+    <String>Performans Kriter Detay</String>
+    <String>36</String>
+    <String>2</String>
+    <String>Performans Data Türü</String>
+    <String>Büyüklük Gelişim</String>
+    <String>37</String>
+    <String>1</String>
+    <String>Performans Data Türü</String>
+    <String>38</String>
+    <String>1</String>
+    <String>Performans Data Türü</String>
+    <String>39</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>40</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>41</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>42</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>43</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>44</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>45</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>46</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>47</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>48</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>49</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>50</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>51</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>52</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>53</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>54</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>55</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>56</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>57</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>58</String>
+    <String>1</String>
+    <String>Büyüklük Gelişim</String>
+    <String>59</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>60</String>
+    <String>2</String>
+    <String>Sayısal Performans</String>
+    <String>KarneTip</String>
+    <String>61</String>
+    <String>2</String>
+    <String>Sayısal Performans</String>
+    <String>ResmiPuan</String>
+    <String>62</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>63</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>64</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>65</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>66</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>67</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>68</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>69</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>70</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>71</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>72</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>73</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>74</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>75</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>76</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>77</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>78</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>79</String>
+    <String>1</String>
+    <String>Sayısal Performans</String>
+    <String>80</String>
+    <String>1</String>
+    <String>ResmiPuan</String>
+    <String>81</String>
+    <String>1</String>
+    <String>KarneTip</String>
+    <String>82</String>
+    <String>1</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>83</String>
+    <String>1</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>84</String>
+    <String>2</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>HedefKriter</String>
+    <String>85</String>
+    <String>3</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>HedefKriterPortfoy</String>
+    <String>HedefKriterPortfoybirim</String>
+    <String>86</String>
+    <String>2</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>HedefGerceklesmeSegment</String>
+    <String>87</String>
+    <String>1</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>88</String>
+    <String>1</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>89</String>
+    <String>1</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>90</String>
+    <String>1</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>91</String>
+    <String>1</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>92</String>
+    <String>1</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>93</String>
+    <String>1</String>
+    <String>Hedef Gerçekleşme</String>
+    <String>94</String>
+    <String>1</String>
+    <String>HedefGerceklesmeSegment</String>
+    <String>95</String>
+    <String>1</String>
+    <String>HedefKriter</String>
+    <String>96</String>
+    <String>1</String>
+    <String>HedefKriter</String>
+    <String>97</String>
+    <String>1</String>
+    <String>HedefKriter</String>
+    <String>98</String>
+    <String>1</String>
+    <String>HedefKriterPortfoy</String>
+    <String>99</String>
+    <String>1</String>
+    <String>HedefKriterPortfoy</String>
+    <String>100</String>
+    <String>1</String>
+    <String>HedefKriterPortfoy</String>
+    <String>101</String>
+    <String>1</String>
+    <String>HedefKriterPortfoybirim</String>
+  </FieldSrcTables>
+  <TableViewData>
+    <Pos></Pos>
+    <CtlInfo>
+      <InternalView>
+        <Tables>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>992</Left>
+              <Top>83</Top>
+              <Width>100</Width>
+              <Height>64</Height>
+            </Pos>
+            <Caption>_Degisim</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>1255</Left>
+              <Top>93</Top>
+              <Width>100</Width>
+              <Height>46</Height>
+            </Pos>
+            <Caption>_Tutar</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>1126</Left>
+              <Top>93</Top>
+              <Width>100</Width>
+              <Height>46</Height>
+            </Pos>
+            <Caption>_GruplamaTipi</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>757</Left>
+              <Top>308</Top>
+              <Width>155</Width>
+              <Height>388</Height>
+            </Pos>
+            <Caption>Şube Hiyerarşi</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>1254</Left>
+              <Top>452</Top>
+              <Width>173</Width>
+              <Height>82</Height>
+            </Pos>
+            <Caption>Performans Kriter</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>1253</Left>
+              <Top>582</Top>
+              <Width>172</Width>
+              <Height>82</Height>
+            </Pos>
+            <Caption>Performans Kriter Detay</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>1253</Left>
+              <Top>352</Top>
+              <Width>174</Width>
+              <Height>82</Height>
+            </Pos>
+            <Caption>Performans Data Türü</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>961</Left>
+              <Top>240</Top>
+              <Width>174</Width>
+              <Height>460</Height>
+            </Pos>
+            <Caption>Büyüklük Gelişim</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>448</Left>
+              <Top>306</Top>
+              <Width>202</Width>
+              <Height>424</Height>
+            </Pos>
+            <Caption>Sayısal Performans</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>176</Left>
+              <Top>415</Top>
+              <Width>192</Width>
+              <Height>64</Height>
+            </Pos>
+            <Caption>ResmiPuan</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>175</Left>
+              <Top>503</Top>
+              <Width>193</Width>
+              <Height>64</Height>
+            </Pos>
+            <Caption>KarneTip</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>448</Left>
+              <Top>31</Top>
+              <Width>203</Width>
+              <Height>262</Height>
+            </Pos>
+            <Caption>Hedef Gerçekleşme</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>173</Left>
+              <Top>200</Top>
+              <Width>192</Width>
+              <Height>64</Height>
+            </Pos>
+            <Caption>HedefGerceklesmeSegment</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>195</Left>
+              <Top>54</Top>
+              <Width>167</Width>
+              <Height>100</Height>
+            </Pos>
+            <Caption>HedefKriter</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>729</Left>
+              <Top>30</Top>
+              <Width>184</Width>
+              <Height>100</Height>
+            </Pos>
+            <Caption>HedefKriterPortfoy</Caption>
+          </TableViewTableWinSaveInfo>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>760</Left>
+              <Top>177</Top>
+              <Width>180</Width>
+              <Height>64</Height>
+            </Pos>
+            <Caption>HedefKriterPortfoybirim</Caption>
+          </TableViewTableWinSaveInfo>
+        </Tables>
+        <BroomPoints></BroomPoints>
+        <ConnectionPoints></ConnectionPoints>
+        <ZoomFactor>3FF0000000000000</ZoomFactor>
+      </InternalView>
+      <SourceView></SourceView>
+    </CtlInfo>
+    <Mode>0</Mode>
+  </TableViewData>
+  <Bookmarks></Bookmarks>
+  <SavedByVersion>11.20.12664.0409</SavedByVersion>
+  <ForceBackEndMacroExecution>false</ForceBackEndMacroExecution>
+  <FieldTags>
+    <ScriptBased>
+      <FieldTagData>
+        <Tag>$key</Tag>
+        <FieldNames>
+          <String>$Field</String>
+          <String>$Table</String>
+          <String>Key_Sube</String>
+          <String>Key_Kriter</String>
+          <String>Key_KriterDetay</String>
+          <String>Key_DataTuru</String>
+          <String>karne_tip_id</String>
+          <String>karne_resmipuandurum_id</String>
+          <String>HedefKriterId</String>
+          <String>HedefKriterIdPortfoy</String>
+          <String>HedefSegmentNo</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$hidden</Tag>
+        <FieldNames>
+          <String>$Field</String>
+          <String>$Table</String>
+          <String>$Rows</String>
+          <String>$Fields</String>
+          <String>$FieldNo</String>
+          <String>$Info</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$system</Tag>
+        <FieldNames>
+          <String>$Field</String>
+          <String>$Table</String>
+          <String>$Rows</String>
+          <String>$Fields</String>
+          <String>$FieldNo</String>
+          <String>$Info</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$text</Tag>
+        <FieldNames>
+          <String>$Field</String>
+          <String>$Table</String>
+          <String>$Info</String>
+          <String>_Değişim</String>
+          <String>_Tutar</String>
+          <String>_GruplamaTipi</String>
+          <String>Key_Sube</String>
+          <String>Birim Adı</String>
+          <String>Seviye 1</String>
+          <String>Seviye 2</String>
+          <String>Seviye 3</String>
+          <String>Seviye 4</String>
+          <String>Hiyerarşi</String>
+          <String>Seviye Durumu</String>
+          <String>Birim Adı Güncel</String>
+          <String>Seviye 1 Güncel</String>
+          <String>Seviye 2 Güncel</String>
+          <String>Seviye 3 Güncel</String>
+          <String>Seviye 4 Güncel</String>
+          <String>Hiyerarşi Güncel</String>
+          <String>Seviye Durumu Güncel</String>
+          <String>Kriter Adı</String>
+          <String>Kriter Detay Ad</String>
+          <String>Data Türü Açıklaması</String>
+          <String>Data Türü Kısa</String>
+          <String>Para Cinsi</String>
+          <String>Döviz</String>
+          <String>kriter_ack</String>
+          <String>KarneGrup</String>
+          <String>karne_resmipuandurum_ad</String>
+          <String>karne_tip_ad</String>
+          <String>HedefSegmentAd</String>
+          <String>HedefKriterAd</String>
+          <String>HedefKriterGrup</String>
+          <String>HedefKriterAdPortfoy</String>
+          <String>HedefKriterGrupPortfoy</String>
+          <String>HedefKriterIdPortfoyBirim</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$numeric</Tag>
+        <FieldNames>
+          <String>$Rows</String>
+          <String>$Fields</String>
+          <String>$FieldNo</String>
+          <String>_Değişim Ay</String>
+          <String>Key_Donem</String>
+          <String>Sube_ID</String>
+          <String>Ölçek Grup</String>
+          <String>Ölçek Grup Güncel</String>
+          <String>Kriter Sıra</String>
+          <String>Key_Kriter</String>
+          <String>Key_KriterDetay</String>
+          <String>Kriter Detay Sıra</String>
+          <String>Key_DataTuru</String>
+          <String>Donem</String>
+          <String>Segment No</String>
+          <String>Şube Başı</String>
+          <String>Değer</String>
+          <String>Değer -3 ay</String>
+          <String>Değer -6 ay</String>
+          <String>Değer -9 ay</String>
+          <String>Değer -12 ay</String>
+          <String>Banka Payı</String>
+          <String>Banka Sırası</String>
+          <String>Birim Payı</String>
+          <String>Birim Sırası</String>
+          <String>Grup Bölge Payı</String>
+          <String>Grup Bölge Sırası</String>
+          <String>Bölge Payı</String>
+          <String>Bölge Sırası</String>
+          <String>Koordinatörlük Payı</String>
+          <String>Koordinatörlük Sırası</String>
+          <String>karne_tip_id</String>
+          <String>karne_resmipuandurum_id</String>
+          <String>ref_subetip_id</String>
+          <String>ref_subeolcek_id</String>
+          <String>ref_subebolge_id</String>
+          <String>ref_subekoordinatorluk_id</String>
+          <String>ref_portfoy_id</String>
+          <String>ref_portfoytip_id</String>
+          <String>ref_performanskriter_id</String>
+          <String>ref_yil_id</String>
+          <String>ref_ceyrek_id</String>
+          <String>fact_hedefpuan</String>
+          <String>fact_hedefalinanpuan</String>
+          <String>fact_gelisimpuan</String>
+          <String>fact_gelisimalinanpuan</String>
+          <String>fact_buyuklukpuan</String>
+          <String>fact_buyuklukalinanpuan</String>
+          <String>fact_maxpuan</String>
+          <String>fact_alinantoplampuan</String>
+          <String>HedefDonemMMMYY</String>
+          <String>HedefSubeID</String>
+          <String>HedefKriterId</String>
+          <String>HedefKriterIdPortfoy</String>
+          <String>HedefSegmentNo</String>
+          <String>HedefFactHedef</String>
+          <String>HedefFactGerceklesen</String>
+          <String>HedefKriterPuan</String>
+          <String>HedefPortfoyFactHedef</String>
+          <String>HedefPortfoyFactGerceklesen</String>
+          <String>HedefPortfoyKriterPuan</String>
+          <String>HEDEFPORTFOY_ID</String>
+          <String>HedefKriterSirasi</String>
+          <String>HedefKriterSirasiPortfoy</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$integer</Tag>
+        <FieldNames>
+          <String>$Rows</String>
+          <String>$Fields</String>
+          <String>$FieldNo</String>
+          <String>_Değişim Ay</String>
+          <String>Key_Donem</String>
+          <String>Sube_ID</String>
+          <String>Ölçek Grup</String>
+          <String>Ölçek Grup Güncel</String>
+          <String>Kriter Sıra</String>
+          <String>Key_Kriter</String>
+          <String>Key_KriterDetay</String>
+          <String>Kriter Detay Sıra</String>
+          <String>Key_DataTuru</String>
+          <String>Donem</String>
+          <String>Segment No</String>
+          <String>Şube Başı</String>
+          <String>Banka Payı</String>
+          <String>Banka Sırası</String>
+          <String>Birim Payı</String>
+          <String>Birim Sırası</String>
+          <String>Grup Bölge Payı</String>
+          <String>Grup Bölge Sırası</String>
+          <String>Bölge Payı</String>
+          <String>Bölge Sırası</String>
+          <String>Koordinatörlük Payı</String>
+          <String>Koordinatörlük Sırası</String>
+          <String>karne_tip_id</String>
+          <String>karne_resmipuandurum_id</String>
+          <String>ref_subetip_id</String>
+          <String>ref_subeolcek_id</String>
+          <String>ref_subebolge_id</String>
+          <String>ref_subekoordinatorluk_id</String>
+          <String>ref_portfoy_id</String>
+          <String>ref_portfoytip_id</String>
+          <String>ref_performanskriter_id</String>
+          <String>ref_yil_id</String>
+          <String>ref_ceyrek_id</String>
+          <String>HedefDonemMMMYY</String>
+          <String>HedefSubeID</String>
+          <String>HedefKriterId</String>
+          <String>HedefKriterIdPortfoy</String>
+          <String>HedefSegmentNo</String>
+          <String>HedefPortfoyFactHedef</String>
+          <String>HEDEFPORTFOY_ID</String>
+          <String>HedefKriterSirasi</String>
+          <String>HedefKriterSirasiPortfoy</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$ascii</Tag>
+        <FieldNames>
+          <String>$Info</String>
+          <String>_Tutar</String>
+          <String>_GruplamaTipi</String>
+          <String>Key_Sube</String>
+          <String>Seviye Durumu</String>
+          <String>Seviye Durumu Güncel</String>
+          <String>Data Türü Kısa</String>
+          <String>Para Cinsi</String>
+          <String>Döviz</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$timestamp</Tag>
+        <FieldNames>
+          <String>Key_Donem</String>
+          <String>Donem</String>
+          <String>HedefDonemMMMYY</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$date</Tag>
+        <FieldNames>
+          <String>Key_Donem</String>
+          <String>Donem</String>
+          <String>HedefDonemMMMYY</String>
+        </FieldNames>
+      </FieldTagData>
+    </ScriptBased>
+    <Interactive></Interactive>
+  </FieldTags>
+  <FieldComments></FieldComments>
+  <TableComments></TableComments>
+  <CreatePrjFolder>false</CreatePrjFolder>
+  <LinkedTables></LinkedTables>
+</DocInternals>
