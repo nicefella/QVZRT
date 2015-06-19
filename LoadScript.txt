@@ -1,0 +1,318 @@
+﻿///$tab Main
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='£#,##0.00;-£#,##0.00';
+SET TimeFormat='hh:mm:ss';
+SET DateFormat='DD.MM.YYYY';
+SET TimestampFormat='DD.MM.YYYY hh:mm:ss';
+SET MonthNames='Oca;Şub;Mar;Nis;May;Haz;Tem;Ağu;Eyl;Eki;Kas;Ara';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+
+let vStartPeriod = floor(num(monthend(AddMonths(now(),-12))));
+///$tab Inline
+_Degisim:
+LOAD * INLINE [
+    _Değişim Ay, _Değişim
+    3, 3 Aylık
+    6, 6 Aylık
+    9, 9 Aylık
+    12, 1 Yıllık
+];
+
+_Tutar:
+LOAD * INLINE [
+    _Tutar
+    Bin
+    Milyon
+];
+
+_GruplamaTipi:
+LOAD * INLINE [
+    _GruplamaTipi
+    Toplam
+    Ortalama
+];
+///$tab Mapping
+//Map_HierOlcekGrup:
+//mapping LOAD * INLINE [
+//    OlcekGrup, OlcekGrupAd
+//    1, 1.Grup Şube
+//    2, 2.Grup Şube
+//    3, 3.Grup Şube
+//    4, 4.Grup Şube
+//    5, 5.Grup Şube
+//    6, 6.Grup Şube
+//    7, 7.Grup Şube
+//    8, 8.Grup Şube
+//    9, 1.Grup Bölge
+//    10, 2.Grup Bölge
+//    11, 3.Grup Bölge
+//];
+//
+//Map_Bolge_Olcek:
+//mapping LOAD distinct 
+//	BolgeKodu as [Bölge Kodu], 
+//	OlcekGrup as [Ölçek Grup]
+//	FROM [..\Hier Ayrık1.qvd] (qvd) where Seviye1='Bölgeler' and Hiyerarşi='Bölge';
+//
+//
+///$tab Sube Hiyerarsi
+[Şube Hiyerarşi]:
+LOAD //Key_Sube,
+year(Key_Donem)&'_'&floor(num(month(Key_Donem))/4+1)&'_'&Sube_ID as Key_Sube, 
+     Key_Donem,    
+     Sube_ID, 
+     [Birim Adı], 
+     [Seviye 1], 
+     [Seviye 2], 
+     [Seviye 3], 
+     [Seviye 4], 
+     [Ölçek Grup], 
+     Hiyerarşi, 
+     [Seviye Durumu], 
+     [Ölçek Grup Açıklama], 
+     [Birim Adı Güncel], 
+     [Seviye 1 Güncel], 
+     [Seviye 2 Güncel], 
+     [Seviye 3 Güncel], 
+     [Seviye 4 Güncel], 
+     [Ölçek Grup Güncel], 
+     [Hiyerarşi Güncel], 
+     [Seviye Durumu Güncel]
+FROM
+qvdgen\SubeHiyerarsi_Guncelli.qvd
+(qvd);
+
+
+
+
+
+//[Şube Hiyerarşi]:
+//LOAD Sube_ID, 
+//     Key_Sube, 
+//     [Şube Kodu], 
+//     [Seviye 1], 
+//     [Seviye 2], 
+//     [Seviye 2 orj], 
+//     [Seviye 3], 
+//     [Seviye 4], 
+//     [Bölge Kodu], 
+//     [Koordinatörlük Kodu], 
+//     [Banka Kodu], 
+//     Hiyerarşi, 
+//     [Ölçek Grup], 
+//     [Seviye Durumu], 
+//     [Ölçek Grup Açıklama]
+//FROM
+//qvdgen\Sube_Hiyerarsi.qvd
+//(qvd);
+//
+//
+//
+//
+//
+////[Şube Hiyerarşi]:
+////LOAD Sube_ID, 
+////	Hier_Key as Key_Sube, 
+////	SubeKodu as [Şube Kodu], 
+////	Seviye1 as [Seviye 1],
+////	if(Seviye1='Bölgeler',
+////	if(OlcekGrup>8,ApplyMap('Map_HierOlcekGrup',OlcekGrup), 
+////	if(not isnull(OlcekGrup), ApplyMap('Map_HierOlcekGrup',ApplyMap('Map_Bolge_Olcek',BolgeKodu)),
+////	if(isnull(OlcekGrup),ApplyMap('Map_HierOlcekGrup',ApplyMap('Map_Bolge_Olcek',BolgeKodu)),Seviye2))),Seviye2) as [Seviye 2], 
+////	Seviye2 as [Seviye 2 orj],
+////	Seviye3 as [Seviye 3],
+////	Seviye4 as [Seviye 4],
+////	BolgeKodu as [Bölge Kodu], 
+////	KoordinatorlukKodu as [Koordinatörlük Kodu], 
+////	BankaKodu as [Banka Kodu], 
+////	Hiyerarşi, 
+////	OlcekGrup as [Ölçek Grup],
+////	if(Sube_ID=BankaKodu,'B',
+////	if(Sube_ID=KoordinatorlukKodu,'K',
+////	if(Sube_ID=BolgeKodu,'R','S'))) as [Seviye Durumu],
+////	ApplyMap('Map_HierOlcekGrup',OlcekGrup) as [Ölçek Grup Açıklama]
+////	FROM [..\Hier Ayrık1.qvd] (qvd);
+////
+///$tab Kriter
+[Performans Kriter]:
+LOAD * INLINE [
+Kriter Sıra,	Key_Kriter,	Kriter Adı
+4,	3,	TOPLAM AKTİFLER
+5,	5,	TOPLAM KREDİLER
+7,	6,	BİREYSEL KREDİLER
+8,	33,	KREDİ KULLANDIRIM
+10,	11,	TAKİPTEKİ KREDİLER
+12,	14,	TOPLAM MEVDUAT
+15,	16,	BANKAMIZ BONOSU
+16,	20,	KAR / ZARAR
+20,	9,	DIŞ TİCARET HACMİ
+22,	24,	FİŞ ADETLERİ
+23,	21,	AKTİF MÜŞTERİ ADEDİ
+24,	29,	RASYOLAR
+11,	34,	BİREYSEL KREDİ (SGK,KAMU,MAAŞ HARİÇ)
+25, 10, ÜRÜNLER
+13, 13, KAMU MEVDUATI
+30, 23, TARIMSAL SÜBVANSİYONLU KREDİ
+40, 35, BİREYSEL KREDİ BAKİYESİ
+];
+
+
+LOAD [Kriter Detay No] as Key_KriterDetay, 
+     [Kriter Detay Ad], 
+     [Kriter Sıra] as [Kriter Detay Sıra]
+FROM
+[..\Performans Kriter Detay.qvd]
+(qvd);
+
+
+LOAD [Data Türü No] as Key_DataTuru, 
+     [Data Türü Açıklaması], 
+     [Data Türü Kısa]
+FROM
+[..\Performans Data Türü.qvd]
+(qvd);
+
+///$tab Buyukluk Gelisim
+[Büyüklük Gelişim]:
+LOAD date(Donem,'MMM-YY') as Donem, 
+     year(Donem)&'_'&floor(num(month(Donem))/4+1)&'_'&Key_Sube as Key_Sube,
+     [Data Türü No] as Key_DataTuru, 
+     [Segment No], 
+     [Kriter No] as Key_Kriter, 
+     [Kriter Detay No] as Key_KriterDetay, 
+     Key_RefSube as [Şube Başı],
+     [Para Cinsi], 
+     Döviz, 
+     Değer, 
+     [Değer -3 ay], 
+     [Değer -6 ay], 
+     [Değer -9 ay], 
+     [Değer -12 ay],
+     1 as [Banka Payı],
+     1 as [Banka Sırası],
+     1 as [Birim Payı],
+     1 as [Birim Sırası],
+     1 as [Grup Bölge Payı],
+     1 as [Grup Bölge Sırası],
+     1 as [Bölge Payı],
+     1 as [Bölge Sırası],
+     1 as [Koordinatörlük Payı],
+     1 as [Koordinatörlük Sırası]
+FROM [..\FactDataCleaned.qvd] (qvd) where Donem >= $(vStartPeriod);
+
+
+
+///$tab Sayisal Performans - Karne
+[Sayısal Performans]:
+LOAD kriter_ack, 
+     ref_karnetip_id as karne_tip_id, 
+     ref_resmipuandrm_id as karne_resmipuandurum_id, 
+   //  ref_sube_id as Key_Sube, 
+     ref_yil_id&'_'&ref_ceyrek_id&'_'&ref_sube_id as Key_Sube,
+     ref_subetip_id, 
+     ref_subeolcek_id, 
+     ref_subebolge_id, 
+     ref_subekoordinatorluk_id, 
+     ref_portfoy_id, 
+     ref_portfoytip_id, 
+     ref_performanskriter_id, 
+     KarneGrup, 
+     ref_yil_id, 
+     ref_ceyrek_id, 
+     fact_hedefpuan, 
+//     fact_hedefdeger, 
+//     fact_hedefgerceklesendeger, 
+//     fact_hedefgerceklesmeoran, 
+     fact_hedefalinanpuan, 
+//     ref_hedefsirano, 
+//     ref_hedefhavuzbirimadet, 
+     fact_gelisimpuan, 
+//     fact_gelisimreferansdeger, 
+//     fact_gelisimgerceklesendeger, 
+     fact_gelisimalinanpuan, 
+//     ref_gelisimsirano, 
+//     ref_gelisimhavuzbirimadet, 
+     fact_buyuklukpuan, 
+//     fact_buyuklukreferansdeger, 
+//     fact_buyuklukgerceklesendeger, 
+     fact_buyuklukalinanpuan, 
+//     ref_buyukluksirano, 
+//     ref_buyuklukhavuzbirimadet, 
+     fact_maxpuan, 
+     fact_alinantoplampuan 
+//     ref_toplamsirano, 
+//     ref_toplamhavuzbirimadet
+FROM qvdgen\Karne1.qvd (qvd);
+
+
+Directory;
+LOAD karne_resmipuandurum_id, 
+     karne_resmipuandurum_ad
+FROM
+[..\ResmiPuan.qvd]
+(qvd);
+
+Directory;
+LOAD karne_tip_id, 
+     karne_tip_ad
+FROM
+[..\KarneTip.qvd]
+(qvd);
+
+
+
+///$tab Hedef Gerceklesme
+[Hedef Gerçekleşme]:
+LOAD HedefDonemMMMYY, 
+     year(HedefDonemMMMYY)&'_'&floor(num(month(HedefDonemMMMYY))/4+1)&'_'&Hier_Key as Key_Sube,
+     HedefSubeID, 
+     HedefKriterId, 
+     HedefKriterIdPortfoy, 
+     HedefSegmentNo, 
+     HedefFactHedef, 
+     HedefFactGerceklesen, 
+     HedefKriterPuan, 
+     HedefPortfoyFactHedef, 
+     HedefPortfoyFactGerceklesen, 
+     HedefPortfoyKriterPuan, 
+   //  Hier_Key as Key_Sube, 
+     HEDEFPORTFOY_ID
+FROM
+[..\HedefGerceklesme.qvd]
+(qvd);
+
+Directory;
+LOAD HedefSegmentNo, 
+     HedefSegmentAd
+FROM
+[..\HedefGerceklesmeSegment.qvd]
+(qvd);
+
+Directory;
+LOAD HedefKriterId, 
+     HedefKriterSirasi, 
+     HedefKriterAd, 
+     HedefKriterGrup
+FROM
+[..\HedefKriter.qvd]
+(qvd);
+
+Directory;
+LOAD HedefKriterIdPortfoy, 
+     HedefKriterSirasiPortfoy, 
+     HedefKriterAdPortfoy, 
+     HedefKriterGrupPortfoy
+FROM
+[..\HedefKriterPortfoy.qvd]
+(qvd);
+
+Directory;
+LOAD HedefKriterIdPortfoyBirim, 
+     HedefKriterIdPortfoy
+FROM
+[..\HedefKriterPortfoybirim.qvd]
+(qvd);
+
